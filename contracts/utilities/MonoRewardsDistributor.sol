@@ -138,11 +138,8 @@ contract MonoRewardsDistributor is IRewardsDistributor, CoreRef, Timed {
             );
     }
 
-    // Represents the integral of 2R/d - 2R/d^2 x dx from t to d
-    // Integral equals 2Rx/d - Rx^2/d^2
-    // Evaluated at t = 2R*t/d (start) - R*t^2/d^2 (end)
-    // Evaluated at d = 2R - R = R
-    // Solution = R - (start - end) or equivalently end + R - start (latter more convenient to code)
+    
+    // Calculate reward distribution,linear decay
     function _unreleasedReward(
         uint256 _totalReward,
         uint256 _duration,
