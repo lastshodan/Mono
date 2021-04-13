@@ -1,0 +1,19 @@
+{
+  "name": "synthetix-mine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.1.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.0",
+    "openzeppelin-solidity": "^2.3.0"
+  }
+}
