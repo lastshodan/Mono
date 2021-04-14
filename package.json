@@ -1,5 +1,5 @@
 {
-  "name": "synthetix-mine",
+  "name": "Mono",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Curtis",
   "license": "ISC",
   "devDependencies": {
     "hardhat": "^2.1.2"
