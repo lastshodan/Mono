@@ -152,7 +152,6 @@ contract MonoRewardsDistributor is IRewardsDistributor, CoreRef, Timed {
     ) internal pure returns (uint256) {
     
        
-        
         // 2R*t/d
         Decimal.D256 memory start =
             Decimal.ratio(_totalReward, _duration).mul(2).mul(_time);
