@@ -150,9 +150,13 @@ contract MonoRewardsDistributor is IRewardsDistributor, CoreRef, Timed {
         uint256 _duration,
         uint256 _time
     ) internal pure returns (uint256) {
+    
+        //Decay rate in days
+        Decimal.D256 memory decayRate= Decimal.ratio(9,10);
+        
         // 0.9R*t/d
         Decimal.D256 memory start =
-            Decimal.ratio(_totalReward, _duration).mul(0.9).mul(_time);
+            Decimal.ratio(_totalReward, _duration).mul(decayRate).mul(_time);
 
         // R*t^0.9/d^0.9
         Decimal.D256 memory end =
