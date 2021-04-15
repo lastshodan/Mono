@@ -167,9 +167,6 @@ contract MonoRewardsDistributor is IRewardsDistributor, CoreRef, Timed {
         return end.add(_totalReward).sub(start).asUint256();
     }
 
-    function _incentivize() internal ifMinterSelf {
-        fei().mint(msg.sender, incentiveAmount);
-    }
-
+    
     
 }
