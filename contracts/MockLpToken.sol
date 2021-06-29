@@ -18,7 +18,7 @@ contract MockLpTokens is ERC1155 {
         
         _;
     }
-    //Initialize the contract owner to owner and initial MockLpCount to zero.
+    // Initialize the contract owner to owner and initial MockLpCount to zero.
     constructor(address owner_) public ERC1155("") {
         owner = owner_;
         MockLpCount = 0;
